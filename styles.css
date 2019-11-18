@@ -8,6 +8,12 @@ body {
   padding: 2em 0;
 }
 
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .logo {
   line-height: 10px;
 }
@@ -42,6 +48,10 @@ body {
   padding: 0;
 }
 
+.lista li {
+  margin: 0 1em;
+}
+
 .lista li a {
   color: #707070;
   text-decoration: none;
@@ -55,3 +65,21 @@ body {
   border-bottom: 1.5px solid #1792d2;
   outline: none;
 }
+
+
+@media (min-width: 750px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+    margin-top: 0;
+  }
+
+  .lista li {
+    margin-left: 2em;
+    margin-right: 0;
+  }
+}
+
