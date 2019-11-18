@@ -12,6 +12,9 @@ body {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -38,7 +41,6 @@ body {
   font-family: "Ubuntu";
   font-weight: bold;
   font-size: 1rem;
-  margin-top: 2em;
 }
 
 .lista {
@@ -66,26 +68,20 @@ body {
   outline: none;
 }
 
-@media (min-width: 750px) {
+@media (max-width: 835px) {
   .container {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
   }
-  .nav {
-    margin-top: 0;
+
+  header {
+    text-align: center;
   }
 
-  .lista li {
-    margin-left: 2em;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .lista {
+  nav ul {
     flex-direction: column;
   }
+
   .lista li {
     margin: 0.3em 0;
   }
