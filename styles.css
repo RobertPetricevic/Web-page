@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.logo {
+  line-height: 10px;
+}
+
+.large {
+  font-family: "Lora", serif;
+  font-size: 3.375rem;
+  color: #143774;
+}
+
+.small {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 1rem;
+  color: #1792d2;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.nav {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 2em;
+}
+
+.lista {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.lista li a {
+  color: #707070;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lista li a:hover,
+.lista li a:focus {
+  color: #525050;
+  text-decoration: underline;
+  outline: none;
+}
