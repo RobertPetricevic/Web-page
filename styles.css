@@ -66,7 +66,6 @@ body {
   outline: none;
 }
 
-
 @media (min-width: 750px) {
   .container {
     display: flex;
@@ -83,3 +82,11 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .lista {
+    flex-direction: column;
+  }
+  .lista li {
+    margin: 0.3em 0;
+  }
+}
