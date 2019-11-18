@@ -14,17 +14,18 @@ body {
 
 .large {
   font-family: "Lora", serif;
-  font-size: 3.375rem;
+  font-size: 2rem;
   color: #143774;
+  font-weight: normal;
 }
 
 .small {
   font-family: "Ubuntu";
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: #1792d2;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 2px;
 }
 
 .nav {
@@ -37,7 +38,7 @@ body {
 .lista {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0;
 }
 
@@ -45,14 +46,16 @@ body {
   color: #707070;
   text-decoration: none;
   cursor: pointer;
+  margin: 0 1em;
 }
 
 .lista li a:hover,
 .lista li a:focus {
-  color: #525050;
-  text-decoration: underline;
+  color: #1792d2;
+  border-bottom: 1.5px solid #1792d2;
   outline: none;
 }
+
 @media (min-width: 750px) {
   .header {
     display: flex;
