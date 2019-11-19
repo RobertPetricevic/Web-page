@@ -1,90 +1,146 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
 body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  color: #707070;
+  font-weight: 300;
+}
+
+/* =================
+Typography
+================= */
+span {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+}
+
+h1 {
+  font-size: 2rem;
   margin: 0;
 }
 
-.header {
-  background: #f8f8f8;
-  text-align: center;
-  padding: 2em 0;
+/* h1 subtitle */
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
 }
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.article-body a {
+  color: #1792d2;
+}
+
+.article-body a:hover,
+.article-body a:focus {
+  color: #143774;
+}
+
+.article-info {
+  font-family: "Sagoe UI", serif;
+  font-size: 0.875rem;
+  color: #707070;
+}
+
+.article-read-more {
+  text-decoration: none;
+  color: #1792d2;
+  font-size: 0.875rem;
+  letter-spacing: 0.175rem;
+  font-weight: bold;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  text-decoration: underline;
+  color: #143774;
+}
+
+/* =================
+Layout
+================= */
 
 .container {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  align-items: center;
 }
+
 .container-nav {
   display: flex;
   justify-content: space-between;
 }
 
-.logo {
-  line-height: 10px;
+header {
+  background: #f8f8f8;
+  padding: 2em 0;
 }
 
-.large {
-  font-family: "Lora", serif;
-  font-size: 2rem;
-  color: #143774;
-  font-weight: normal;
-}
+/* navigation */
 
-.small {
-  font-family: "Ubuntu";
-  font-weight: bold;
-  font-size: 0.75rem;
-  color: #1792d2;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.nav {
-  font-family: "Ubuntu";
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.lista {
-  list-style-type: none;
+nav ul {
+  list-style: none;
+  padding: 0;
   display: flex;
   justify-content: center;
-  padding: 0;
 }
 
-.lista li {
-  margin: 0 1em;
+nav li {
+  margin-left: 2em;
 }
 
-.lista li a {
-  color: #707070;
+nav a {
   text-decoration: none;
-  cursor: pointer;
-  margin: 0 1em;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
 }
 
-.lista li a:hover,
-.lista li a:focus {
+nav a:hover,
+nav a:focus {
   color: #1792d2;
-  border-bottom: 1.5px solid #1792d2;
-  outline: none;
+  border-bottom: 0.6px solid #1792d2;
 }
 
-@media (max-width: 835px) {
-  .container {
+.current-page {
+  border-bottom: 0.6px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+  border-bottom: 0.6px solid #707070;
+}
+
+@media (max-width: 675px) {
+  .container-nav {
     flex-direction: column;
-    align-items: center;
   }
 
   header {
     text-align: center;
   }
-
   nav ul {
     flex-direction: column;
   }
 
-  .lista li {
-    margin: 0.3em 0;
+  nav li {
+    margin: 0.5em 0;
   }
 }
