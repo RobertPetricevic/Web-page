@@ -249,3 +249,12 @@ nav a:focus {
     margin: 0.5em 0;
   }
 }
+
+/* About me */
+
+.image-full {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
